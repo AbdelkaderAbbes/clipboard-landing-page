@@ -1,0 +1,43 @@
+.workflow {
+  padding-bottom: 8rem;
+  text-align: center;
+  #{&}__header {
+    margin-bottom: 3.889rem;
+    & h2 {
+      color: #4c545d;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  #{&}__box {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & div {
+      width: 31%;
+      margin-bottom: 3rem;
+
+      @include tablet {
+        width: 100%;
+      }
+
+      & img {
+        margin-bottom: 2rem;
+      }
+
+      & h3 {
+        margin-bottom: 2rem;
+        color: #4c545d;
+      }
+
+      & p {
+        line-height: 1.6;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.footer {
+  padding: 2.8125rem 0;
+  background: #eee;
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include phone {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  #{&}__links {
+    display: flex;
+    align-items: center;
+    @include phone {
+      flex-direction: column;
+    }
+
+    & img {
+      width: 3.4375rem;
+      margin-right: 8.625rem;
+      @include phone {
+        margin-right: 0;
+        margin-bottom: 3.5rem;
+      }
+    }
+
+    & .links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 1rem;
+      @include phone {
+        grid-template-columns: 1fr;
+        margin-bottom: 3.5rem;
+      }
+
+      a {
+        color: $d-gray-blue;
+        text-decoration: none;
+        transition: 300ms ease-in-out;
+
+        &:hover {
+          color: $strong-cyan;
+        }
+      }
+    }
+  }
+
+  #{&}__social-links {
+    & a {
+      text-decoration: none;
+    }
+    & a:not(:last-child) {
+      margin-right: 1.75rem;
+    }
+  }
+}

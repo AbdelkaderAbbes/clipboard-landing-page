@@ -1,0 +1,16 @@
+.company {
+  padding-bottom: 4.17rem;
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    & img {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 3.83rem;
+    }
+
+  }
+}

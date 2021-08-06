@@ -1,0 +1,73 @@
+.header {
+  text-align: center;
+  background: url(../images/bg-header-desktop.png) no-repeat;
+  background-size: 100% 55%;
+
+  @include phone {
+    background: url(../images/bg-header-mobile.png) no-repeat;
+    background-size: 100% 45%;
+  }
+
+  #{&}__container {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+
+    & img {
+      width: 125px;
+    }
+
+    & h1 {
+      font-weight: $f-700;
+      margin-top: 3.83rem;
+      color: $d-gray-blue;
+      font-size: 1.889rem;
+    }
+
+    & p {
+      margin-top: 1.5rem;
+      width: 600px;
+      max-width: 100%;
+      line-height: 1.6;
+      margin: 1.5rem auto 0;
+    }
+  }
+
+  #{&}__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+    @include phone {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & .btn {
+      // border-radius: 2rem;
+      // padding: 1.22rem 2.11rem;
+      // display: block;
+      // text-decoration: none;
+      // color: #fff;
+
+      @include phone {
+        width: 17.3rem;
+        max-width: 100%;
+      }
+
+      &:first-child {
+        margin-right: 1rem;
+        background: $strong-cyan;
+        box-shadow: $strong-cyan 0px 20px 74px -28px;
+
+        @include phone {
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
+      }
+      &:not(:first-child) {
+        background: $light-blue;
+        box-shadow: $light-blue 0px 20px 74px -28px;
+      }
+    }
+  }
+}

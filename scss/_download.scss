@@ -1,0 +1,52 @@
+.download {
+  padding-bottom: 8rem;
+  text-align: center;
+  #{&}__header {
+    & h2 {
+      color: #4c545d;
+      margin-bottom: 1.5rem;
+    }
+
+    & p {
+      width: 600px;
+      max-width: 100%;
+      line-height: 1.6;
+      margin:0 auto 1.5rem;
+    }
+  }
+
+  #{&}__links {
+    display: flex;
+    justify-content: center;
+
+    @include phone {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & .btn {
+      @include phone {
+        width: 17.3rem;
+        max-width: 100%;
+      }
+    }
+
+    & .btn:not(:last-child) {
+      margin-right: 1rem;
+      background: $strong-cyan;
+      box-shadow: $strong-cyan 0px 20px 74px -28px;
+
+      @include phone {
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+      
+    }
+
+    & .btn:last-child {
+      background: $light-blue;
+      box-shadow: $light-blue 0px 20px 74px -28px;
+    }
+
+  }
+}

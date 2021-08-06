@@ -1,0 +1,66 @@
+@import "variables";
+@import "resets";
+@import "queries";
+@import "header";
+@import "features";
+@import "clipboard";
+@import "workflow";
+@import "company";
+@import "download";
+@import "footer";
+
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Media queries */
+
+/* small screen */
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* sedium screen */
+@media (min-width: 982px) {
+  .container {
+    width: 950px;
+  }
+}
+/* large screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+.btn {
+  border-radius: 2rem;
+  padding: 1.22rem 2.11rem;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background: red;
+}
+
+//  testing
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background: $strong-cyan;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $light-blue;
+  border-radius: 50px;
+}

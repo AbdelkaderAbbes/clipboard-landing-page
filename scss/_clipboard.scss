@@ -1,0 +1,28 @@
+.clipboard {
+  padding-bottom: 8rem;
+  text-align: center;
+  #{&}__header {
+    margin-bottom: 6.667rem;
+    & h2 {
+      color: $d-gray-blue;
+      margin-bottom: 1.5rem;
+    }
+
+    & p {
+      width: 600px;
+      max-width: 100%;
+      line-height: 1.6;
+      margin:auto ;
+    }
+  }
+
+  #{&}__img {
+    width: 46rem;
+    margin: auto;
+    max-width: 100%;
+    & img {
+      width: 100%;
+    }
+  }
+
+}
